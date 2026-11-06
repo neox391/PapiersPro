@@ -192,8 +192,9 @@ struct LogoSection: View {
 
                 VStack(alignment: .leading, spacing: 8) {
                     if subscriptions.isPremium {
+                        let pickerTitle = store.logoData == nil ? "Ajouter un logo" : "Changer le logo"
                         PhotosPicker(selection: $item, matching: .images) {
-                            Text(store.logoData == nil ? "Ajouter un logo" : "Changer le logo")
+                            Text(pickerTitle)
                         }
                     } else {
                         Button {

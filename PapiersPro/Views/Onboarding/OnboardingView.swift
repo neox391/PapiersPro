@@ -150,8 +150,8 @@ struct OnboardingView: View {
         VStack(spacing: 0) {
             BusinessInfoForm(profile: $profile, header: AnyView(
                 StepHeader(title: "Votre entreprise", subtitle: "Saisie une seule fois, réutilisée sur tous vos documents. Modifiable à tout moment dans Réglages.")
-                    .listRowInsets(EdgeInsets())
-                    .listRowBackground(Color.clear)
+                    .textCase(nil)
+                    .foregroundStyle(.primary)
                     .padding(.bottom, 4)
             ))
             bottomButton("Terminer", enabled: profile.isComplete) {

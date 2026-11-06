@@ -13,7 +13,8 @@ enum PageMetrics {
     static let quantityColumn: CGFloat = 52
     static let unitColumn: CGFloat = 52
     static let priceColumn: CGFloat = 78
-    static var totalColumn: CGFloat { contentWidth - descriptionColumn - quantityColumn - unitColumn - priceColumn }
+    static let tableInset: CGFloat = 6
+    static var totalColumn: CGFloat { contentWidth - tableInset * 2 - descriptionColumn - quantityColumn - unitColumn - priceColumn }
 }
 
 enum DocFont {
