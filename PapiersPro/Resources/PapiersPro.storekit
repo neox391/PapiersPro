@@ -1,0 +1,53 @@
+{
+  "identifier" : "5B7C1E2A",
+  "nonRenewingSubscriptions" : [],
+  "products" : [],
+  "settings" : {
+    "_applicationInternalID" : "",
+    "_developerTeamID" : "",
+    "_failTransactionsEnabled" : false,
+    "_locale" : "fr_FR",
+    "_storefront" : "FRA",
+    "_storeKitErrors" : []
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21500001",
+      "localizations" : [
+        {
+          "description" : "Documents illimités, logo personnalisé et tous les métiers",
+          "displayName" : "PapiersPro Illimité",
+          "locale" : "fr_FR"
+        }
+      ],
+      "name" : "PapiersPro Illimité",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "4.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6500000001",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Documents illimités, logo personnalisé et tous les métiers",
+              "displayName" : "Illimité mensuel",
+              "locale" : "fr_FR"
+            }
+          ],
+          "productID" : "com.papierspro.app.unlimited.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Illimité mensuel",
+          "subscriptionGroupID" : "21500001",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}
