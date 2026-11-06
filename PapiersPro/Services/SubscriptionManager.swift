@@ -54,7 +54,11 @@ final class SubscriptionManager {
 
     func purchase() async {
         if product == nil { await loadProducts() }
-        guard let product else { return }
+        guard let product else {
+            errorMessage = errorMessage ?? "L'abonnement est momentanément indisponible. Réessayez plus tard."
+            return
+        }
+        errorMessage = nil
         isLoading = true
         defer { isLoading = false }
         do {

@@ -169,7 +169,7 @@ struct DocumentPageView: View {
         }
         .font(font(DocFont.small, .semibold))
         .foregroundStyle(Color.white)
-        .padding(.horizontal, 6)
+        .padding(.horizontal, PageMetrics.tableInset)
         .frame(width: PageMetrics.contentWidth, height: 22)
         .background(RoundedRectangle(cornerRadius: 4).fill(Self.accent))
     }
@@ -188,7 +188,7 @@ struct DocumentPageView: View {
                 Text(c.money(line.total)).frame(width: PageMetrics.totalColumn, alignment: .trailing)
             }
             .font(font(DocFont.body))
-            .padding(.horizontal, 6)
+            .padding(.horizontal, PageMetrics.tableInset)
             .padding(.vertical, 4.5)
             Rectangle().fill(Self.rule).frame(height: 0.5)
         }

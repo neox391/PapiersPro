@@ -10,7 +10,7 @@ struct BusinessInfoForm<Footer: View>: View {
         let country = profile.country
         Form {
             if let header {
-                Section { header }
+                Section {} header: { header }
             }
 
             Section("Entreprise") {
